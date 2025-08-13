@@ -3,10 +3,10 @@ function changeTextContent() {
     var textOptions = ["This is the text that will be changed.", "I am different text, look at me!"];
     var currentContent = textElement.textContent;
 
-    if (currentContent != textOptions[1]) {
-        textElement.textContent = textOptions[1];
+    if (currentContent != textOptions[1]) { //if the current text isn't the different text...
+        textElement.textContent = textOptions[1]; //change it to the different text.
     }
-    else {
-        textElement.textContent = textOptions[0];
+    else { //otherwise...
+        textElement.textContent = textOptions[0]; //change it to the original text
     }
 }
