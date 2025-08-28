@@ -6,8 +6,8 @@ class BankAccount {
     }
     check_balance() {
         let balanceElement = document.getElementById("balanceValue");
-        balanceElement.textContent = "£"+toString(this.balance);
-        console.log("The current balance for ${this.accountHolder} is £"+toString(this.balance));
+        balanceElement.textContent = "£"+this.balance;
+        console.log('The current balance for '+this.accountHolder+' is £'+this.balance);
     }
     deposit(x) {
         this.balance += x;
