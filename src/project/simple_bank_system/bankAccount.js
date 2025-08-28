@@ -7,12 +7,13 @@ class BankAccount {
     check_balance() {
         let balanceElement = document.getElementById("balanceValue");
         balanceElement.textContent = "£"+toString(this.balance);
+        console.log("The current balance for ${this.accountHolder} is £"+toString(this.balance));
     }
-    deposit_balance(x) {
+    deposit(x) {
         this.balance += x;
         this.check_balance();
     }
-    withdraw_balance(x) {
+    withdraw(x) {
         if (x>this.balance) {
             console.log("Insufficient funds");
         } else {
