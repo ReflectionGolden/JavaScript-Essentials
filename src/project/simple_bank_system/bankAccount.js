@@ -4,21 +4,21 @@ class BankAccount {
     this.accountNumber = accountNumber;
     this.balance = balance;
     }
-    check_balance() {
-        let balanceElement = document.getElementById("balanceValue");
+    check_balance(id) {
+        let balanceElement = document.getElementById(id);
         balanceElement.textContent = "£"+this.balance;
         console.log('The current balance for '+this.accountHolder+' is £'+this.balance);
     }
-    deposit(x) {
+    deposit(x, id) {
         this.balance += x;
-        this.check_balance();
+        this.check_balance(id);
     }
-    withdraw(x) {
+    withdraw(x, id) {
         if (x>this.balance) {
             console.log("Insufficient funds");
         } else {
             this.balance -= x;
-            this.check_balance();
+            this.check_balance(id);
         }
     }
 }
