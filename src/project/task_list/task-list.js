@@ -14,11 +14,13 @@ function addTask() {
 
     let newTaskRemover = document.createElement("button");
     newTaskRemover.className = buttonClass;
+    newTaskRemover.textContent = "Delete Task";
 
     newTaskElement.appendChild(newTaskRemover);
     taskContainer.insertAdjacentElement("beforeend", newTaskElement);
     newTaskRemover.addEventListener("click", function () {
         newTaskElement.remove();
+        console.log(newTaskElement.id + " Deleted.");
     });
     taskNumber++;
 }
