@@ -386,6 +386,9 @@
   .text-lightsite {
     color: var(--color-lightsite);
   }
+  .line-through {
+    text-decoration-line: line-through;
+  }
   .underline {
     text-decoration-line: underline;
   }

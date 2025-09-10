@@ -16,8 +16,20 @@ function addTask() {
     newTaskRemover.className = buttonClass;
     newTaskRemover.textContent = "Delete Task";
 
+    let newTaskCompleter = document.createElement("button");
+    newTaskCompleter.className = buttonClass;
+    newTaskCompleter.textContent = "Toggle Complete";
+
+    newTaskElement.appendChild(newTaskCompleter);
     newTaskElement.appendChild(newTaskRemover);
     taskContainer.insertAdjacentElement("beforeend", newTaskElement);
+    newTaskCompleter.addEventListener("click", function () {
+        if (newTaskElement.classList.contains("line-through")) {
+            newTaskElement.classList.remove("line-through")
+        } else {
+            newTaskElement.classList.add("line-through")
+        }
+    });
     newTaskRemover.addEventListener("click", function () {
         newTaskElement.remove();
         console.log(newTaskElement.id + " Deleted.");
