@@ -2,6 +2,7 @@ const newTaskInput = document.querySelector("#newTask");
 const addTaskButton = document.querySelector("button");
 const taskContainer = document.querySelector("#taskContainer");
 var taskNumber = 0;
+const buttonClass = "m-1 p-1 rounded-md bg-blue-600 hover:bg-blue-500 active:bg-blue-700";
 
 function addTask() {
     let taskName = newTaskInput.value
@@ -10,8 +11,19 @@ function addTask() {
     let newTaskElement = document.createElement("p");
     newTaskElement.innerText = taskName;
     newTaskElement.id = "task" + taskNumber;
+
+    let newTaskRemover = document.createElement("button");
+    newTaskRemover.className = buttonClass;
+    newTaskRemover.addEventListener("click", removeTask(newTaskElement.id));
+
+    newTaskElement.appendChild(newTaskRemover);
     taskContainer.insertAdjacentElement("beforeend", newTaskElement);
     taskNumber++;
+}
+
+function removeTask(id) {
+    let taskToRemove = document.getElementById(id);
+    taskToRemove.remove();
 }
 
 addTaskButton.addEventListener("click", addTask);
