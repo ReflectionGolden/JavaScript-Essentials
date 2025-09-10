@@ -14,10 +14,10 @@ function addTask() {
 
     let newTaskRemover = document.createElement("button");
     newTaskRemover.className = buttonClass;
-    newTaskRemover.addEventListener("click", removeTask(newTaskElement.id));
 
     newTaskElement.appendChild(newTaskRemover);
     taskContainer.insertAdjacentElement("beforeend", newTaskElement);
+    newTaskRemover.addEventListener("click", removeTask(newTaskElement.id));
     taskNumber++;
 }
 
