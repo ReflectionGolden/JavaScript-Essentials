@@ -34,6 +34,7 @@ function addTask() {
         newTaskElement.remove();
         console.log(newTaskElement.id + " Deleted.");
     });
+    newTaskInput.value = "";
     taskNumber++;
 }
 
