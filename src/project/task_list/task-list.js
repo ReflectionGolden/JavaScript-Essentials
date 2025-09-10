@@ -17,13 +17,10 @@ function addTask() {
 
     newTaskElement.appendChild(newTaskRemover);
     taskContainer.insertAdjacentElement("beforeend", newTaskElement);
-    newTaskRemover.addEventListener("click", removeTask(newTaskElement.id));
+    newTaskRemover.addEventListener("click", function () {
+        newTaskElement.remove();
+    });
     taskNumber++;
-}
-
-function removeTask(id) {
-    let taskToRemove = document.getElementById(id);
-    taskToRemove.remove();
 }
 
 addTaskButton.addEventListener("click", addTask);
