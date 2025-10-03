@@ -1,5 +1,5 @@
 // Variable declaration
-let results = [1.58, 3.45, 3.55, 4.57, 7.51];
+let results = [4.2,5.1,3.8,4.7,5.3];
 let mean;
 
 // Function
