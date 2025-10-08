@@ -3,8 +3,8 @@ let array = ["Initial value"]
 
 //functions
 function displayArray() {
-    let displayElement = document.getElementById("arrayDisplay");
-    let displayValue = "";
+    const displayElement = document.getElementById("arrayDisplay");
+    const displayValue = "";
 
     for (let i = 0; i < array.length; i++) {
         const element = array[i];
