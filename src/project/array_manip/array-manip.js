@@ -4,17 +4,7 @@ let array = ["Initial value"]
 //functions
 function displayArray() {
     const displayElement = document.getElementById("arrayDisplay");
-    const displayValue = "";
-
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        const disp = "Element "+ i +": " + element;
-        if (i != array.length - 1) {
-            disp.concat(" <br>");
-        }
-        displayValue.concat(disp);
-    }
-
+    const displayValue = array.join("<br>");
     displayElement.textContent = displayValue;
 }
 
