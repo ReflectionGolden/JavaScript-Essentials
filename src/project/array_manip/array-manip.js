@@ -4,7 +4,12 @@ let array = ["Initial value"]
 //functions
 function displayArray() {
     const displayElement = document.getElementById("arrayDisplay");
-    const displayValue = array.join("<br>");
+    const displayedArray = [];
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        displayedArray[i] = "Element "+ i +": " + element;
+    }
+    const displayValue = displayedArray.join("<br>");
     displayElement.textContent = displayValue;
 }
 
