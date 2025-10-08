@@ -20,32 +20,34 @@
     </div>
     <div class="m-auto my-5 py-[0.5rem] px-[3rem] bg-containback shadow-[5px_5px_15px_rgba(0,0,0,0.5)] w-3/4 lg:w-1/2 rounded-[1rem]">
         <h2 class="text-2xl font-bold inline-block border-b">Array Display</h2>
-        <p class="px-1 text-xl border-b border-dashed" id="arrayDisplay"></p>
+        <p class="px-1 text-xl text-center border-b border-dashed" id="arrayDisplay">Element 1: Initial value</p>
     </div>
     <div class="m-auto my-5 py-[0.5rem] px-[3rem] bg-containback shadow-[5px_5px_15px_rgba(0,0,0,0.5)] w-3/4 lg:w-1/2 rounded-[1rem]">
         <h2 class="text-2xl font-bold inline-block border-b">Array Manipulatiors</h2>
-        <div class="ml-3 my-3 flex">
-            <h3 class="pr-2 text-xl w-2/4 lg:w-1/3">Add to the beginning of the Array:</h3>
-            <input type="text" id="newElement" name="newElement" placeholder="New Element Value" class="bg-gray-100/5 border-b rounded-md w-5/7">
-            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 lg:w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonUnshift">Unshift</button>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">Add to the beginning of the Array:</h3>
+            <input type="text" id="newElement" name="newElement" placeholder="New Element Value" class="bg-gray-100/5 border-b rounded-md w-1/2">
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonUnshift">Unshift</button>
         </div>
-        <div class="ml-3 my-3 flex">
-            <h3 class="pr-2 text-xl w-2/4 lg:w-1/3">Add to the end of the Array:</h3>
-            <input type="text" id="newElement" name="newElement" placeholder="New Element Value" class="bg-gray-100/5 border-b rounded-md w-5/7">
-            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 lg:w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonPush">Push</button>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">Add to the end of the Array:</h3>
+            <input type="text" id="newElement" name="newElement" placeholder="New Element Value" class="bg-gray-100/5 border-b rounded-md w-1/2">
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonPush">Push</button>
         </div>
-        <div class="ml-3 my-3 flex">
-            <h3 class="pr-2 text-xl w-2/4 lg:w-1/3">Remove last element from Array:</h3>
-            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 lg:w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonPop">Pop</button>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">Remove first element from Array:</h3>
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonShift">Shift</button>
         </div>
-        <div class="ml-3 my-3 flex">
-            <h3 class="pr-2 text-xl w-2/4 lg:w-1/3">Remove first element from Array:</h3>
-            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 lg:w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonShift">Shift</button>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">Remove last element from Array:</h3>
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonPop">Pop</button>
         </div>
-        <div class="ml-3 my-3 flex">
-            <h3 class="pr-2 text-xl w-2/4 lg:w-1/3">add and/or remove multiple elements to/from Array:</h3>
-            <input type="text" id="newElement" name="newElement" placeholder="New Element Value" class="bg-gray-100/5 border-b rounded-md w-5/7">
-            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 lg:w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonSplice">Splice</button>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">add and/or remove multiple elements to/from Array:</h3>
+            <input type="text" id="startIndex" name="startIndex" placeholder="Starting Index" class="bg-gray-100/5 border-b rounded-md w-1/5">
+            <input type="text" id="deleteCount" name="deleteCount" placeholder="Delete Count" class="bg-gray-100/5 border-b rounded-md w-1/5">
+            <input type="text" id="newElement" name="newElement" placeholder="New Element Value(s)" class="bg-gray-100/5 border-b rounded-md w-1/5">
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/4 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonSplice">Splice</button>
         </div>
     </div>
 </body>
