@@ -2,6 +2,22 @@
 let array = ["Initial value"]
 
 //functions
+function displayArray() {
+    let displayElement = document.getElementById("arrayDisplay");
+    let displayValue = "";
+
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        const disp = "Element "+ i +": " + element;
+        if (i != array.length - 1) {
+            disp.concat(" <br>");
+        }
+        displayValue.concat(disp);
+    }
+
+    displayElement.textContent = displayValue;
+}
+
 function unshiftArray(array, value) {
     let values = [];
 
@@ -17,9 +33,11 @@ function unshiftArray(array, value) {
         console.log("Adding '" + value + "' as an element to the beginning of the array.");
         array.unshift(value);
     }
+
+    displayArray();
 }
 
 //initial display
-
+displayArray();
 
 //Button Handlers
