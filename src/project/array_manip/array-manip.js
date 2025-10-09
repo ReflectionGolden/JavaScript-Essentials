@@ -41,10 +41,7 @@ function pushArray(array, value) {
     if (value.includes(", ")) {
         console.log("Adding '" + value + "' as elements to the end of the array.");
         values = value.split(", ")
-        for (let i = 0; i < values.length; i++) {
-            const element = values[i];
-            array.push(element);
-        }
+        values.forEach ((element) => array.push(element));
     }
     else {
         console.log("Adding '" + value + "' as an element to the end of the array.");
