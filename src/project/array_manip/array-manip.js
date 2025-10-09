@@ -2,6 +2,7 @@
 const displayElement = document.querySelector("#arrayDisplay");
 const newElementUnshift = document.querySelector("#newElementUnshift");
 const newElementPush = document.querySelector("#newElementPush");
+const removalIndex = document.querySelector("#removalIndex");
 
 //Array creation
 let array = ["Initial value"];
@@ -70,6 +71,13 @@ function popArray(array) {
     displayArray();
 }
 
+function spliceArray(array, index) {
+    const removedValue = array.splice(index, 1);
+    console.log("Removed '"+ removedValue + "' from position "+ index +" of the array.");
+
+    displayArray();
+}
+
 //initial display
 displayArray();
 
@@ -78,3 +86,4 @@ document.querySelector("#buttonUnshift").onclick = function () {unshiftArray(arr
 document.querySelector("#buttonPush").onclick    = function () {pushArray(array, newElementPush.value)};
 document.querySelector("#buttonShift").onclick   = function () {shiftArray(array)};
 document.querySelector("#buttonPop").onclick     = function () {popArray(array)};
+document.querySelector("#buttonSplice").onclick  = function () {spliceArray(array, removalIndex.value)};
