@@ -10,10 +10,7 @@ let array = ["Initial value"];
 //functions
 function displayArray() {
     const displayedArray = [];
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        displayedArray[i] = "Element "+ i +": " + element;
-    }
+    array.forEach((element) => displayedArray.push("Element "+ array.indexOf(element) +": " + element));
     const displayValue = displayedArray.join(", ");
     console.log("Displaying array ["+ array.join(", ") +"] as ["+ displayValue +"]");
     displayElement.textContent = displayValue;
