@@ -56,9 +56,17 @@ function pushArray(array, value) {
     displayArray();
 }
 
+function shiftArray(array) {
+    const removedValue = array.shift();
+    console.log("Removed '"+ removedValue + "' from the front of the array.");
+
+    displayArray();
+}
+
 //initial display
 displayArray();
 
 //Button Handlers
 document.querySelector("#buttonUnshift").onclick = function () {unshiftArray(array, newElementUnshift.value)};
 document.querySelector("#buttonPush").onclick = function () {pushArray(array, newElementPush.value)};
+document.querySelector("#buttonShift").onclick = function () {shiftArray(array)};
