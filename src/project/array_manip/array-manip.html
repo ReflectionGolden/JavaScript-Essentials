@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../output.css">
+    <script type="module" src="./array-manip.js"></script>
+    <title>Ninth Project</title>
+</head>
+<body class="bg-darksite text-lightsite">
+    <h1 class="text-3xl font-bold">JavaScript Essentials Site: Ninth Project</h1>
+    <nav class="flex justify-center bg-blue-500/10">
+        <a href="../../../index.html" class="m-1 p-1 rounded-md bg-blue-600 hover:bg-blue-500 active:bg-blue-700">Home Page</a>
+    </nav>
+    <div class="m-auto my-5 py-[0.5rem] px-[3rem] bg-containback shadow-[5px_5px_15px_rgba(0,0,0,0.5)] w-3/4 lg:w-1/2 rounded-[1rem]">
+        <h2 class="text-2xl font-bold inline-block border-b">Array Manipulation Project</h2>
+        <p>
+            This project showcases the use Javascript for the manipulation of arrays. You will be able to manipulate the array using this page. If adding multiple values, please separate them via a use of a comma followed by a space (such as this: ", ").
+        </p>
+    </div>
+    <div class="m-auto my-5 py-[0.5rem] px-[3rem] bg-containback shadow-[5px_5px_15px_rgba(0,0,0,0.5)] w-3/4 lg:w-1/2 rounded-[1rem]">
+        <h2 class="text-2xl font-bold inline-block border-b">Array Display</h2>
+        <p class="px-1 text-xl text-center border-b border-dashed" id="arrayDisplay"></p>
+    </div>
+    <div class="m-auto my-5 py-[0.5rem] px-[3rem] bg-containback shadow-[5px_5px_15px_rgba(0,0,0,0.5)] w-3/4 lg:w-1/2 rounded-[1rem]">
+        <h2 class="text-2xl font-bold inline-block border-b">Array Manipulatiors</h2>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">Add to the beginning of the Array:</h3>
+            <input type="text" id="newElementUnshift" name="newElementUnshift" placeholder="New Element Value" class="bg-gray-100/5 border-b rounded-md w-1/2">
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonUnshift">Unshift (Add to start)</button>
+        </div>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">Add to the end of the Array:</h3>
+            <input type="text" id="newElementPush" name="newElementPush" placeholder="New Element Value" class="bg-gray-100/5 border-b rounded-md w-1/2">
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonPush">Push (Add to end)</button>
+        </div>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">Remove first element from Array:</h3>
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonShift">Shift (Remove First)</button>
+        </div>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">Remove last element from Array:</h3>
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonPop">Pop (Remove Last)</button>
+        </div>
+        <div class="ml-3 my-3 border-t">
+            <h3 class="pr-2 text-xl">Remove a specific element from Array by index:</h3>
+            <input type="text" id="removalIndex" name="removalIndex" placeholder="Removal Index" class="bg-gray-100/5 border-b rounded-md w-1/2">
+            <button class="mx-1 px-4 text-xl border rounded-md w-1/3 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700" id="buttonSplice">Splice</button>
+        </div>
+    </div>
+</body>
+</html>
