@@ -12,7 +12,7 @@ function displayArray() {
         const element = array[i];
         displayedArray[i] = "Element "+ i +": " + element;
     }
-    const displayValue = displayedArray.join("<br>");
+    const displayValue = displayedArray.join(", ");
     displayElement.textContent = displayValue;
 }
 
