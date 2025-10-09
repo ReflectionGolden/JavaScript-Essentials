@@ -22,7 +22,7 @@ function unshiftArray(array, value) {
     if (value.includes(", ")) {
         console.log("Adding '" + values + "' as elements to the beginning of the array.")
         values = value.split(", ")
-        for (let i = 0; i < values.length; i++) {
+        for (let i = values.length-1; i > -1; i--) {
             const element = values[i];
             array.unshift(element);
         }
