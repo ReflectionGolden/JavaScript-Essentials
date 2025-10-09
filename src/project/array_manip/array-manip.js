@@ -4,7 +4,7 @@ const newElementUnshift = document.querySelector("#newElementUnshift");
 const newElementPush = document.querySelector("#newElementPush");
 
 //Array creation
-let array = ["Initial value"]
+let array = ["Initial value"];
 
 //functions
 function displayArray() {
@@ -14,6 +14,7 @@ function displayArray() {
         displayedArray[i] = "Element "+ i +": " + element;
     }
     const displayValue = displayedArray.join(", ");
+    console.log("Displaying array ["+ array.join(", ") +"] as ["+ displayValue +"]");
     displayElement.textContent = displayValue;
 }
 
@@ -21,7 +22,7 @@ function unshiftArray(array, value) {
     let values = [];
 
     if (value.includes(", ")) {
-        console.log("Adding '" + value + "' as elements to the beginning of the array.")
+        console.log("Adding '" + value + "' as elements to the beginning of the array.");
         values = value.split(", ")
         for (let i = values.length-1; i > -1; i--) {
             const element = values[i];
@@ -40,7 +41,7 @@ function pushArray(array, value) {
     let values = [];
 
     if (value.includes(", ")) {
-        console.log("Adding '" + value + "' as elements to the end of the array.")
+        console.log("Adding '" + value + "' as elements to the end of the array.");
         values = value.split(", ")
         for (let i = 0; i < values.length; i++) {
             const element = values[i];
