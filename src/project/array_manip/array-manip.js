@@ -1,9 +1,12 @@
+//element declaration
+const displayElement = document.querySelector("#arrayDisplay");
+const newElementUnshift = document.querySelector("#newElementUnshift");
+
 //Array creation
 let array = ["Initial value"]
 
 //functions
 function displayArray() {
-    const displayElement = document.getElementById("arrayDisplay");
     const displayedArray = [];
     for (let i = 0; i < array.length; i++) {
         const element = array[i];
@@ -36,3 +39,4 @@ function unshiftArray(array, value) {
 displayArray();
 
 //Button Handlers
+document.querySelector("#buttonUnshift").onclick = function () {unshiftArray(array, newElementUnshift.value)};
