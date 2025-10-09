@@ -54,6 +54,10 @@ function pushArray(array, value) {
 }
 
 function shiftArray(array) {
+    if (array.length === 0) {
+        alert("Array is empty");
+        return;
+    }
     const removedValue = array.shift();
     console.log("Removed '"+ removedValue + "' from the front of the array.");
 
@@ -61,6 +65,10 @@ function shiftArray(array) {
 }
 
 function popArray(array) {
+    if (array.length === 0) {
+        alert("Array is empty");
+        return;
+    }
     const removedValue = array.pop();
     console.log("Removed '"+ removedValue + "' from the end of the array.");
 
