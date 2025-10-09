@@ -63,10 +63,18 @@ function shiftArray(array) {
     displayArray();
 }
 
+function popArray(array) {
+    const removedValue = array.pop();
+    console.log("Removed '"+ removedValue + "' from the end of the array.");
+
+    displayArray();
+}
+
 //initial display
 displayArray();
 
 //Button Handlers
 document.querySelector("#buttonUnshift").onclick = function () {unshiftArray(array, newElementUnshift.value)};
-document.querySelector("#buttonPush").onclick = function () {pushArray(array, newElementPush.value)};
-document.querySelector("#buttonShift").onclick = function () {shiftArray(array)};
+document.querySelector("#buttonPush").onclick    = function () {pushArray(array, newElementPush.value)};
+document.querySelector("#buttonShift").onclick   = function () {shiftArray(array)};
+document.querySelector("#buttonPop").onclick     = function () {popArray(array)};
