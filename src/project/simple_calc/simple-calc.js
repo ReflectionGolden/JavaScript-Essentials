@@ -11,7 +11,7 @@ const DivideButton = document.querySelector("#DivButton");
 //error list
 const Errors = {
     "Error0": "Internal Error: Value somehow requested from non-existent input.",
-    "Error1": "Input Error: Please imput valid numbers.",
+    "Error1": "Input Error: Please input valid numbers.",
     "Error2": "Input Error: Division by zero is not allowed"
 }
 
