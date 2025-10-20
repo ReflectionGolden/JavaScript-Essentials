@@ -33,7 +33,7 @@ function getInput(id) {
 }
 
 function displayResult(result) {
-    if (result.includes("Error")) {
+    if (typeof result === 'string' && result.includes("Error")) {
         ResultField.textContent = Errors[result];
     }
     else {
