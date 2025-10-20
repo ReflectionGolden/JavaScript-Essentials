@@ -110,7 +110,7 @@ function divideInputs() {
         z = "Error2";
     }
     else {
-        z = x * y;
+        z = x / y;
     }
 
     displayResult(z);
